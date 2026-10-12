@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+.swiftpm/xcode/xcuserdata/
+
+# Xcode user state
+**/xcuserdata/
+*.xcuserstate
+
+# 本地测试与快照产物
+*.snapshot.png
+
+# Local release artifacts and credentials
+dist/
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision

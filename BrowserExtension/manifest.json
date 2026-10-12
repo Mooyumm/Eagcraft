@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "灵感库网页采集器",
+  "version": "0.3.4",
+  "description": "从 Safari 拖拽网页图片到灵感库，并保留图片来源。",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

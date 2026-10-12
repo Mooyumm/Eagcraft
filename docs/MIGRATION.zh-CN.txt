@@ -1,0 +1,16 @@
+Eagcraft / 灵感库：迁移到另一台 Mac
+
+1. 从 GitHub Releases 下载 DMG 并安装。当前安装版支持 Apple 芯片、macOS 14+，无需安装 Xcode。
+2. 迁移旧素材前先退出旧电脑上的应用，复制完整资源库目录。
+   默认路径：~/Library/Application Support/EagleReplica/Library
+   若切换过资源库，以应用中实际选择的目录为准。
+3. 完整保留 index.json、assets、thumbnails 等文件和子目录。
+4. 在新电脑的应用中选择复制来的资源库；不要直接覆盖新电脑已有的资源库。
+5. AI API Key、模型接口与同步连接请重新配置。本机偏好和文件夹使用频次不属于素材库迁移内容。
+6. iCloud 同步需在新电脑重新选择共享目录，建议在操作前保留独立备份。
+
+仓库源码和 Release 不包含个人素材或 API Key。
+新电脑首次打开可能受 macOS 安全检查限制；当前构建为临时签名、未公证。
+Safari 扩展在目标机器的加载行为尚未验证，可能需要自行使用 Xcode 配置开发签名。
+
+源码构建请阅读仓库根目录 README.md。
